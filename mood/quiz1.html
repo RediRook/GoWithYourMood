@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- meta data & title -->
+        <meta charset="utf-8">
+        <title>Positive Emotions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        
+        <!-- ADDED SCRIPT-->
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1osJzH1LqcfkEU7G9AbahVjfwXb6OsoI"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="203070328921-5gf4a874q1eo1v05uv23np04786dgt6h.apps.googleusercontent.com">
+		<script src="js/quiz1.js"></script>
+		<script src="js/login.js"></script>
+		<!-- ADDED CSS -->
+		<link rel="stylesheet" href="assets/css/style-customize.css">     		
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+  <body>
+
+    <!-- Header -->
+        
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/heart.jpg" width="130" alt="Office"></a>       
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li id="myProfile">
+                        <a  href="profile.html">My Reviews</a>
+                    </li>
+                    <li id="my-signin2">
+					</li>
+					<li><a id ="loggedUser">Logged in as:</a></li>
+					<li>
+						<a id="mySignOut" onClick="signOut()" href="index.html">Sign Out
+						</a>
+					</li>
+                </ul>         
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+	<!--<a href="" id="backId"><img src="assets/img/slider/backbutton.png" style="width:30px; height:30px"></a>-->
+    <!-- Begin #services-section -->
+    <section id="services" class="services-section section-global-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="services-header">
+                    <h3 class="services-header-title">Select Your Current Mood</h3>
+                    <p class="services-header-body"><em> To help us get to know more about personality </em>  </p><hr>
+                </div>
+            </div>
+      
+            <!-- Begin Services Row 1 -->
+            <div class="row services-row services-row-head services-row-1">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+						<h4 class="services-title" href="#section-quiz" id="txtHappy">Happy</h4>
+						<p class="services-icon">
+                        <a href="#section-quiz"><img id="btnHappy" src="assets/img/positive/happy.png" alt="" onmouseover="javascript:document.getElementById('Happy').style.display=''" onmouseout="javascript:document.getElementById('Happy').style.display='none'" class="fa"></a>
+						</p>
+						<div id="Happy" style="margin:0 auto;display:none; text-align: justify; width: auto; height:auto">It’s great that you feel happy, you should go to different places and explore them, it will certainly make you feel even better.</div> 
+												                     
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                        <h4 class="services-title" href="#section-quiz" id="txtCelebratory">Celebratory</h4>
+						<p class="services-icon">
+						<a href="#section-quiz"><img id="btnCelebratory" src="assets/img/positive/celebratory.png" alt="" onmouseover="javascript:document.getElementById('Celebratory').style.display=''"
+            onmouseout="javascript:document.getElementById('Celebratory').style.display='none'"class="fa"></a>
+						</p>                        
+                        <div id="Celebratory" style="margin:0 auto; display:none; text-align: justify; width: auto; height:auto">There are many places nearby you that you should go to celebrate and rejoice. We can help you find some cool places to go.</div>
+                       
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <h4 class="services-title" href="#section-quiz" id="txtEnergetic">Energetic</h4>
+						<p class="services-icon">
+						<a href="#section-quiz"><img id="btnEnergetic" src="assets/img/positive/energetic.png" alt="" onmouseover="javascript:document.getElementById('Energetic').style.display=''"
+            onmouseout="javascript:document.getElementById('Energetic').style.display='none'" class="fa"></a>
+						</p>                      
+                        <div id="Energetic" style="margin:0 auto; display:none; text-align: justify; width: auto; height:auto">If you are feeling energetic you must try out different activates to get the maximum out of your energy. We can help you find interesting places that would be perfect for you according to your energy.</div> 
+                        
+                    </div>        
+                </div>
+            </div>
+            <!-- End Serivces Row 1 -->                
+    
+        </div>      
+    </section>
+    <!-- End #services-section -->
+	
+	<!-- Begin quzi-section -->	
+<section id="section-quiz">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12"> 
+				<div class="blog-post">
+	<!--Happy-->
+	<div id="happyDisplay">
+    <h2 align="center">We would like to know more about your happiness</h2>
+    <!--Q1--> 
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">1</span>
+        <div class="question" style="margin-left:30px" id="happyQ1Head">Would you like to go out to do exciting things and experience new moments?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input class="checked" type="radio" name="q1" value="a" id="happyQ1a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>        
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input  class="checked" type="radio" name="q1" value="b" id="happyQ1b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+	
+     <!--Q2--> 
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">2</span>
+        <div class="question" style="margin-left:30px" id="happyQ2Head">Would you like to meet new and diverse people?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="a" id="happyQ2a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>        
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="b" id="happyQ2b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+	<hr>
+    <div class="alignButton">
+      <p class="ptext">search for nearby places to go and explore</p>
+      <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchHappy">
+    </div>
+  </div>
+
+  <!--Celebratory-->
+  <div id="celebratoryDisplay">
+    <h2 align="center">We would like to know more about your celebratory</h2>   
+    <!--Q1-->
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">1</span>
+        <div class="question" style="margin-left:30px" id="celebratoryQ1Head">Would you like to go out to celebrate the moment with your family and friends?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q1" value="a" id="celebratoryQ1a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>       
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q1" value="b" id="celebratoryQ1b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+     <!--Q2--> 
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">2</span>
+        <div class="question" style="margin-left:30px" id="celebratoryQ2Head">Would you like to go to a restaurant or a bar to celebrate something?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="a" id="celebratoryQ2a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>        
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="b" id="celebratoryQ2b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+    <div class="alignButton">
+      <p class="ptext">search for nearby places to go and explore</p>
+      <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchCelebratory">
+    </div>
+</div>
+
+  <!--Energetic-->
+  <div id="energeticDisplay">
+    <h2 align="center">We would like to know more about your energy</h2>    
+    <!--Q1-->
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">2</span>
+        <div class="question" style="margin-left:30px" id="energeticQ1Head">Would you like to find a place where you can ultilize your energy to a maximum?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="a" id="energeticQ1a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>       
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="b" id="energeticQ1b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+     <!--Q2--> 
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">3</span>
+        <div class="question" style="margin-left:30px" id="energeticQ2Head">Would you like to go to see a lot of people in this place?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q3" value="a" id="energeticQ2a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>        
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q3" value="b" id="energeticQ2b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+    <div class="alignButton">
+      <p class="ptext">search for nearby places to go and explore</p>
+      <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchEnergetic">
+    </div>
+  </div> 
+ 
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+</div>	
+</section>		
+	<!-- End quzi-section -->
+
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container">            
+            <div class="col-md-12">
+				<div class="pull-left">
+				<img src="assets/img/slider/marshmallows.png">				
+				</div>
+				<div class="copyright pull-right">
+				<p>&copy; Copyright 2016&nbsp;&nbsp;&nbsp;All Right Reserved</p>
+				</div>
+            </div>  
+		</div>
+    </footer>
+
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+
+      new WOW().init();
+    </script>
+	<!-- ADDED SCRIPT-->
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reviews</title>
+        <script src="js/review.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id='revHeading'></div>
+        <div id='form'>
+            <form>
+                <table>
+                    <tr>
+                        <td><textarea rows="6" cols="50" id='reviewText'></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Would you like to make this review anonymously?</p>
+                            <input type="radio" name="group1" value="Yes" id='Yes'>Yes
+                            <input type="radio" name="group1" value="No" id='No'>No<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id='btn'>Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id='resultsTable'>Table here</div>
+    </body>
+</html>

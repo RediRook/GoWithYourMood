@@ -1,0 +1,286 @@
+/*==================Button Globle ==========================*/
+.btn:hover{
+	color:#fff;
+	border:outset;
+    background-color:#275d8b;
+    border-color:#1d4567;	
+}
+.trafficMode{    
+	margin:15px 0px 15px;
+	width:100%;
+	height:auto;
+    /*position: absolute;
+    bottom: 30px;*/
+}
+.img-trafficMode{
+	border:#ffffff solid;	
+	border-radius:50%;
+}
+/*==================Index Page ==========================*/
+.emotion-home:hover{
+	background:#105456;
+	cursor:pointer;
+/*	border-radius:10%;*/
+	}
+/*==================About Page ==========================*/
+.box-5 {
+	overflow:hidden;
+	padding-top:8px;
+}
+.box-5 img {
+	margin:4px 10px 0 0;
+}
+.right-1 {
+	margin-right:40px;
+}
+.fleft {
+	float:left;
+}
+
+.img-border {
+    border: #fff 8px solid;
+}
+/*==================Suggestion Page ==========================*/
+
+#emergencyCall{
+	display: none;
+}
+.map {
+	width:100%;
+	height:600px;
+	background-color: #f2f2f2;
+}
+/*map direction pannel*/
+.mappanel{	
+	width:100%; 
+	height:600px;
+	background-color: #f2f2f2;
+	overflow:auto;
+}
+.trafficMode{    
+	margin:30px 50px;
+	width:100%;
+	height:auto;
+}
+.img-trafficMode{
+	border:#ffffff solid;	
+	border-radius:50%;
+}
+.img-trafficMode:hover{
+	cursor:pointer;
+	border:#6495ed solid;	
+}
+.table-2{
+	margin:12px 0 15px;
+	width:100%;
+	height:300px;
+	background-color: #f2f2f2;
+	overflow:auto;
+	text-align:left;
+	vertical-align: middle;
+}
+.table-2 tr, .table-2 td{
+	font-size: 18px;
+	vertical-align: middle;
+	width:550px;   /*set the width for table cell*/
+	height:50px;	
+	border-bottom: 1px solid #b3b3b3;		/*hide table border of table 2*/	
+	}
+.table-2 tr:hover{
+	cursor:pointer;
+	border:3px solid black;
+	border-color:#595959; 
+	color:black;
+}	
+.table-3{
+	margin:12px 0 15px;
+	width:100%;
+	height:300px;
+	background-color: #f2f2f2;
+	overflow:auto;
+	text-align:left;
+	vertical-align: middle;
+}
+/*==================Location Page ==========================*/
+/* style for feedback form 
+-- BY AASHU
+*/
+textarea 
+{
+  background-color :#eceeee; 
+}
+	#modal_wrapper.overlay:before 
+	{
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		background: #000;
+		background: #eceeee;
+  	}
+
+  #modal_window 
+  {
+		display: none;
+		z-index: 200;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		width: 400px;
+		overflow: auto;
+		padding: 10px 20px;
+		background:  #808080;
+		border: 5px solid #999;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #808080;
+  	}
+
+  #modal_wrapper.overlay #modal_window {
+    display: block;
+  }
+.detailTable{
+	background:#f2f2f2;
+	margin:12px 0px 10px; 
+	width:100%; 
+	height:auto;
+	overflow:auto;
+}
+.detailTable td{
+	text-align:justify;
+	font-weight:bolder;
+	vertical-align:middle;
+	width:1%;
+	height:100px;
+	margin:12px 0 15px;
+	padding:0px 10px 0 10px;
+	border-bottom: 1px solid white;
+	border-collapse:collapse;
+}
+.map2 {
+	width:100%;
+	height:600px;
+	background-color: #f2f2f2;
+}
+/*map direction pannel*/
+.directionPanel{	
+	width:100%; 
+	height:600px;
+	background-color: #f2f2f2;
+	overflow:auto;
+}
+.review{
+	margin: 12px 0px 15px; 	
+	width:100%; 
+	height:auto; 
+	background:#f2f2f2;
+}
+.textarea{
+	margin:auto;
+	width:100%;
+	height:auto;
+	overflow:auto;
+	}
+.feedbackTable{
+	background:#f2f2f2;
+	margin:12px 10px 10px; 
+	text-align:left;
+	width:100%; 
+	height:auto;
+	overflow:auto;
+}
+.feedbackTable td, .feedbackTable th{
+	padding:0 20px;
+	border:solid 1px black;
+	width:1%;
+	height:100px;
+}
+/*==================Quiz1 Page ==========================*/
+#happyDisplay{
+	display:none;
+	} 
+#celebratoryDisplay{
+	display:none;
+	} 
+#energeticDisplay{
+	display:none;
+	} 	
+.quiz-field {
+    padding: 10px 20px;
+}
+.question-field{
+	font-size: 1.2em;
+	padding-bottom: 5px;
+}
+
+.question-no{
+	font-size: 1.3em;
+    color: #888;
+    margin-top: 6px;
+    position: absolute;
+    z-index: 2;
+}
+
+.question{
+	z-index: 3;
+    /*padding: 10px 20px;*/
+    background: #f7f7f7; /*origin color f7f7f7*/
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+	}
+
+.answers{
+	cursor: pointer;
+    display: block;
+    /*padding: 1px 2px;
+	padding-bottom: 2px;*/      
+    margin-left: 30px;
+    text-align: center;
+    background-color: #fafafa; 		/*origin color fafafa*/
+    /*border: 1px solid #e5e5e5;*/
+	border:hidden;
+    border-top-width: 0;
+    border-radius: 1px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+	}	
+.answers:hover{
+	box-shadow: 0 2px 15px rgba(0,0,0,.3);
+    background-color: #d8dfea!important;	
+}	
+.alignButton{
+	text-align: center;
+	padding-bottom:20px;
+	}	
+	
+.ptext{
+	text-align:center;
+	font-size:20px;
+	font-weight:lighter;
+	font-family:Lucida Sans Unicode;
+	}
+/*==================Quiz2 Page ==========================*/
+#anxiousDisplay{
+	display:none;
+	}
+#isolatedDisplay{
+  display: none;
+}
+#sadDisplay{
+   display: none;
+}
+#unsafeDisplay{
+  display: none;
+}
+/*==================Sing In & Out ==========================*/
+#mySignOut{
+	display:none;
+}
+
+#loggedUser{
+	display: none;
+}
+#myProfile{
+	display:none;
+}

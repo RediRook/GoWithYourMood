@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Suggestions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+		<!-- meta google SignIn -->
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1osJzH1LqcfkEU7G9AbahVjfwXb6OsoI"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="203070328921-5gf4a874q1eo1v05uv23np04786dgt6h.apps.googleusercontent.com">
+		<script src="js/search.js"></script>
+		<script src="js/ratingSource.js"></script>
+		<script src="js/login.js"></script>
+		
+		
+		<!-- meta google SignIn -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+		<link rel="stylesheet" href="assets/css/rating.min.css">
+        
+		<!-- ADDED CSS -->
+		<link rel="stylesheet" href="assets/css/style-customize.css">        
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+
+    <body>
+
+    <!-- Header -->
+        
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/heart.jpg" width="130" alt="Office"></a>    
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li id="myProfile">
+                        <a  href="profile.html">My Reviews</a>
+                    </li>
+                    <li id="my-signin2"></li>
+					<li><a id ="loggedUser">Logged in as:</a></li>
+					<li>
+						<a id="mySignOut" onClick="signOut()" href="index.html">Sign Out
+						</a>
+					</li>
+                </ul>         
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+	<!--<a href="" id="backId"><img src="assets/img/slider/backbutton.png" style="width:30px; height:30px"></a>-->
+    <!-- Main Container -->
+    <div id="banners"></div>
+        <div class="container">
+			<div class="row">
+					<div class="col-md-12">
+						<div id="emergencyCall" ><h2 class="text-center text-uppercase" style="color:orangered">Call 000 for immediate emergency assistance </h2> <hr></div>
+					</div>
+			</div>
+		
+            <div class="row">
+				<div class="col-md-6"> 
+                    <div class="blog-post">
+                        <h3 class="blog-title">Nearest Locations</h3>
+						<div id="returnDiv" class="table-2 img-border table-responsive"></div> 
+					
+					</div>
+				</div>
+				
+                <div class="col-md-6"> 
+					<div class="blog-post">
+						<h3 class="blog-title">Activities You Might Do</h3>
+						<div id="activityDiv" class="table-3 img-border table-responsive"></div>								
+					</div> 
+				</div> 
+				<div class="table-responsive">
+					<table id="travelMode" class="trafficMode">
+						<tbody>
+							<tr>
+								<td><img id="imgDrive" class="img-responsive img-trafficMode" src="assets/img/mode/drive.jpg" alt=""></td>
+								<td><img id="imgWalk" class="img-responsive img-trafficMode" src="assets/img/mode/walk.jpg" alt=""></td>
+								<td><img id="imgBike" class="img-responsive img-trafficMode" src="assets/img/mode/bicycle.jpg" alt=""></td>
+								<td><img id="imgPublic" class="img-responsive img-trafficMode" src="assets/img/mode/public.jpg" alt=""></td>
+								<td><input class="btn btn-primary btn-lg" type="button" id="moreResults" value="Show More Results"></td>
+								</tr>
+						</tbody>
+					</table>
+				</div> 				
+				
+                <div class="col-md-9"> 				
+                    <div class="blog-post">		
+					<div id="googleMap" class="map img-border"><p>map page</p></div>																		
+                    </div > 
+                </div>
+				
+                <div class="col-md-3"> 
+					<div class="blog-post">				
+						<div class="mappanel img-border" >  
+						<h3 class="blog-title">Directions</h3>						
+							<div id="floating-panel"> <strong>Start:</strong>
+							  <p id="start"></p>
+							  <strong>Destination:</strong>
+							  <p id="end"></p>
+							</div>
+							<div id="right-panel"></div>
+						</div>
+						<div class="clear"></div>								
+					</div> 
+				</div> 
+
+				
+
+            </div>
+        </div>
+       
+        <!--End Main Container -->
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container">            
+            <div class="col-md-12">
+				<div class="pull-left">
+				<img src="assets/img/slider/marshmallows.png">				
+				</div>
+				<div class="copyright pull-right">
+				<p>&copy; Copyright 2016&nbsp;&nbsp;&nbsp;All Right Reserved</p>
+				</div>
+            </div>  
+		</div>
+    </footer>
+    
+
+        
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+  </body>
+</html>

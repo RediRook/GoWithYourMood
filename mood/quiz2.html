@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- meta data & title -->
+        <meta charset="utf-8">
+        <title>Negative Emotions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+       
+        <!-- ADDED SCRIPT-->
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1osJzH1LqcfkEU7G9AbahVjfwXb6OsoI"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="203070328921-5gf4a874q1eo1v05uv23np04786dgt6h.apps.googleusercontent.com">
+		<script src="js/quiz2.js"></script>
+		<script src="js/login.js"></script>
+		<!-- ADDED CSS -->
+		<link rel="stylesheet" href="assets/css/style-customize.css">     		
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+  <body>
+
+    <!-- Header -->
+        
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand wow fadeInDownBig" href="index.html"><img src="assets/img/slider/heart.jpg" width="130" alt="Office"></a>      
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li id="myProfile">
+                        <a  href="profile.html">My Reviews</a>
+                    </li>
+                    <li id="my-signin2">
+					</li>
+					<li><a id ="loggedUser">Logged in as:</a></li>
+					<li>
+						<a id="mySignOut" onClick="signOut()" href="index.html">Sign Out
+						</a>
+					</li>
+                </ul>         
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+	<!--<a href="" id="backId"><img src="assets/img/slider/backbutton.png" style="width:30px; height:30px"></a>-->
+    <!-- Begin #services-section -->
+    <section id="services" class="services-section section-global-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="services-header">
+                    <h3 class="services-header-title">Select Your Current Mood</h3>
+                    <p class="services-header-body"><em> To help us get to know more about personality </em>  </p><hr>
+                </div>
+            </div>
+      
+            <!-- Begin Services Row 1 -->
+            <div class="row services-row services-row-head services-row-1">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+						<h4 class="services-title" href="#section-quiz" id="txtAnxious">Anxious</h4>
+						<p class="services-icon">
+                        <a href="#section-quiz"><img id="btnAnxious" src="assets/img/negative/anxious.png" alt="" onmouseover="javascript:document.getElementById('Anxious').style.display=''"
+            onmouseout="javascript:document.getElementById('Anxious').style.display='none'" class="img-responsive fa"></a>
+						</p>
+						<div id="Anxious" style="margin:0 auto; display:none; text-align: justify; width: auto; height:auto;">Facing anxiety while studying in a new country is quite normal to have, studies have shown that 15.4 % of Australians aged between 16 to 24 have experienced an anxiety disorder.</div>      
+												                     
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="services-group wow animated zoomIn" data-wow-offset="40">
+                        <h4 class="services-title" href="#section-quiz" id="txtIsolated">Isolated</h4>
+						<p class="services-icon">
+						<a href="#section-quiz"><img id="btnIsolated" src="assets/img/negative/isolated.png" alt="" onmouseover="javascript:document.getElementById('Isolated').style.display=''"
+            onmouseout="javascript:document.getElementById('Isolated').style.display='none'" class="img-responsive fa"></a>
+						</p>                        
+                        <div id="Isolated" style="margin:0 auto; display:none; text-align: justify; width: auto; height:auto; padding-bottom:5px;">Being away from home can bring on a roller coaster of emotions and isolation is one of that. But don’t panic we have a solution for you which will help you to overcome your loneliness.</div> 
+                       
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <h4 class="services-title" href="#section-quiz" id="txtSad">Sad</h4>
+						<p class="services-icon">
+						<a href="#section-quiz"><img id="btnSad" src="assets/img/negative/sad.png" alt="" onmouseover="javascript:document.getElementById('Sad').style.display=''"
+            onmouseout="javascript:document.getElementById('Sad').style.display='none'" class="img-responsive fa"></a>
+						</p>                      
+                        <div id="Sad" style="margin:0 auto; display:none; text-align: justify; width: auto; height:auto;">6.3% of Australians aged between 16 and 24 have experienced sadness. Hence you are not alone in that studies has shown that this could be overcome by exploring your surroundings.</div>
+                        
+                    </div>        
+                </div>
+				
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+                        <h4 class="services-title" href="#section-quiz" id="txtUnsafe">Unsafe</h4>
+						<p class="services-icon">
+						<a href="#section-quiz"><img id="btnUnsafe" src="assets/img/negative/unsafe.png" alt="" onmouseover="javascript:document.getElementById('Unsafe').style.display=''"
+            onmouseout="javascript:document.getElementById('Unsafe').style.display='none'" class="img-responsive fa"></a>
+						</p>                      
+                        <div id="Unsafe" style="margin:0 auto; display:none; text-align: justify; width: auto; height:auto;">Feeling unsafe in a new environment is natural, don’t panic and take appropriate measures to ensure your safety. We could provide assistance to you in that matter.</div>
+                        
+                    </div>        
+                </div>				
+            </div>
+            <!-- End Serivces Row 1 -->                
+    
+        </div>      
+    </section>
+    <!-- End #services-section -->
+	
+	<!-- Begin quzi-section -->	
+<section id="section-quiz">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12"> 
+				<div class="blog-post">
+  <!--Anxious--> 
+  <div id="anxiousDisplay">
+    <h2 align="center">We would like to know more about your anxiety</h2>	
+    <!--Q1-->
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"><span class="question-no">1</span>
+        <div class="question" style="margin-left:30px" id="anxiousQ1Head">Do you like a social setting with lots of people or a quite setting with few?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="a" id="anxiousQ1a" style="border:0; background:transparent; margin:0px; ">
+          &nbsp;Many people</label>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="b" id="anxiousQ1b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Few people</label>
+      </div>
+    </div>
+    
+    <!--Q2-->
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">2</span>
+        <div class="question" style="margin-left:30px" id="anxiousQ2Head">Would you consider yourself an active person?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q3" value="a" id="anxiousQ2a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>        
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q3" value="b" id="anxiousQ2b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+    <div class="alignButton">
+    <p class="ptext">search for nearby places to go and overcome your emotion</p>    
+    <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchAnxious">
+    </div>
+  </div>
+  
+  
+  <!--Sad-->
+  <div id="sadDisplay">
+    <h2 align="center">We would like to know more about your sadness</h2>
+    <!--Q1--> 
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">1</span>
+        <div class="question" style="margin-left:30px" id="sadQ1Head">How is your energy level?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="a" id="sadQ1a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;As much energy as ever</label>        
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q2" value="b" id="sadQ1b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Not enough to do much</label>
+      </div>
+    </div>
+    
+    <!--Q2-->
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> <span class="question-no">2</span>
+        <div class="question" style="margin-left:30px" id="sadQ2Head">Would you prefer to meet new people or join a club or social group?</div>
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q3" value="a" id="sadQ2a" style="border:0; background:transparent; margin:0px;">
+          &nbsp;Yes</label>       
+      </div>
+      <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+        <label>
+          <input type="radio" name="q3" value="b" id="sadQ2b" style="border:0; background:transparent; margin:0px;">
+          &nbsp;No</label>
+      </div>
+    </div>
+    <div class="alignButton">
+      <p class="ptext">search for nearby places to go and overcome your emotion</p>
+      <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchSad">
+    </div>
+  </div>
+  
+  <!--Isolated-->
+  <div id="isolatedDisplay">
+    <h2 align="center">We would like to know more about your isolation</h2>
+    <div class="quiz-field">
+      <div style="padding-bottom:5px;"> </div>
+      
+      <!--Q1-->
+      <div class="quiz-field">
+        <div style="padding-bottom:5px;"> <span class="question-no">1</span>
+          <div class="question" style="margin-left:30px" id="isolatedQ1Head">How is your energy level?</div>
+        </div>
+        <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+          <label>
+            <input type="radio" name="q1" value="a" id="isolatedQ1a" style="border:0; background:transparent; margin:0px;">
+            &nbsp;As much energy as ever</label>          
+        </div>
+        <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+          <label>
+            <input type="radio" name="q1" value="b" id="isolatedQ1b" style="border:0; background:transparent; margin:0px;">
+            &nbsp;Not enough to do much</label>
+        </div>
+      </div>
+      
+      <!--Q2-->
+      
+      <div class="quiz-field">
+        <div style="padding-bottom:5px;"> <span class="question-no">2</span>
+          <div class="question" style="margin-left:30px" id="isolatedQ2Head">Do you enjoy being around many people or just a few?</div>
+        </div>
+        <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+          <label>
+            <input type="radio" name="q2" value="a" id="isolatedQ2a" style="border:0; background:transparent; margin:0px;">
+            &nbsp;Many</label>        
+        </div>
+        <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+          <label>
+            <input type="radio" name="q2" value="b" id="isolatedQ2b" style="border:0; background:transparent; margin:0px;">
+            &nbsp;A few</label>
+        </div>
+      </div>
+      <div class="alignButton">
+        <p class="ptext">Search for nearby places to go and overcome your emotion</p>
+        <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchIsolated">
+      </div>
+    </div>
+   </div> 
+    <!--Unsafe-->
+    <div id="unsafeDisplay">
+      <h2 align="center">We would like to know more about your safety</h2>     
+      <div class="quiz-field">
+		<div style="padding-bottom:5px;"> </div>
+		<!--Q1-->
+		<div class="quiz-field">
+        <div style="padding-bottom:5px;"> <span class="question-no">1</span>
+          <div class="question" style="margin-left:30px" id="unsafeQ1Head">Are you in imminent danger or facing a medical emergency?</div>
+        </div>
+        <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+          <label>
+            <input type="radio" name="q1" value="a" id="unsafeQ1a" style="border:0; background:transparent; margin:0px;">
+            &nbsp;Yes</label>
+        </div>
+        <div class="answers" style="font-size:1.2em; padding:12px 1px;">
+          <label>
+            <input type="radio" name="q1" value="b" id="unsafeQ1b" style="border:0; background:transparent; margin:0px;">
+            &nbsp;No</label>
+        </div>
+      </div>
+      <div class="alignButton">
+        <p class="ptext">search for nearby places to go and overcome your emotion</p>
+        <input class="btn btn-primary btn-lg" type="submit" value="Search" id="searchUnsafe">
+      </div>
+    </div>
+  </div>
+ 
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+</div>	
+</section>		
+	<!-- End quzi-section -->
+
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container">            
+            <div class="col-md-12">
+				<div class="pull-left">
+				<img src="assets/img/slider/marshmallows.png">				
+				</div>
+				<div class="copyright pull-right">
+				<p>&copy; Copyright 2016&nbsp;&nbsp;&nbsp;All Right Reserved</p>
+				</div>
+            </div>  
+		</div>
+    </footer>
+
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+
+      new WOW().init();
+    </script>
+	<!-- ADDED SCRIPT-->
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  </body>
+</html>
